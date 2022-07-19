@@ -1,0 +1,192 @@
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Poodle</title>
+    </head>
+    <body>
+        <header>
+            <div class="head">
+                <a class="head_back" style="text-decoration:none;" href="../index.html">&larr; Back</a>
+                <h1>Poodle</h1>
+            </div>
+        </header>
+        <div class="container" style="margin-top: 30px;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../img/poodle1.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/poodle3.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/poodle2.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 40px;">
+            <div class="row">
+                <div class="col">
+                    <h3>Info</h3>
+                    <p class="lead">
+                        The Poodle, called the Pudel in German and the Caniche in French, is a breed of water dog.
+                        The breed is divided into four varieties based on size, the Standard Poodle, Medium Poodle, Miniature Poodle and
+                        Toy Poodle, although the Medium Poodle variety is not universally recognised.
+                        The Poodle most likely originated in Germany, although it is also claimed to be from France.
+                        The Standard Poodle was originally used by wildfowl hunters to retrieve game from water.
+                        The smaller varieties of the breed were bred from the original in France where they were once commonly used as
+                        circus performers, but have become popular companion dogs.
+                    </p>
+                </div>
+            </div>
+            <ul>
+                <li onclick="setScroll_1()">History</li>
+                <li onclick="setScroll_2()">Characteristics</li>
+            </ul>
+            <hr>
+            <ol>
+                <li class="h3">History</li>
+                <p>
+                    A majority of cynologists believe the Poodle originated in Germany, and the dog they refer to is roughly equivalent to the
+                    modern Standard Poodle variety. It is claimed it was known in Germany from the Middle Ages, and it was Germany's water dog, just as
+                    England had the English Water Spaniel, France the Barbet, Ireland the Irish Water Spaniel and the Netherlands the Wetterhoun. Among
+                    the evidence used to support this theory is the indisputably Germanic name for the breed, Poodle or "Pudel" in German, which is
+                    derived from the Low German word "puddeln", which means "to splash". Additionally, there exists a number of artistic works, by various
+                    German artists, and from as early as the 17th century, that depict dogs of recognisably Poodle type. Some cynologists believe the
+                    Poodle originated in France, where it is known as the "Caniche" (French for "duck dog"), and that the breed descends from the Barbet.
+                    This view is shared by the Fédération Cynologique Internationale (FCI). Others argue that the breed originated in Russia,
+                    Piedmont or Northwest Africa.
+                </p>
+
+                <p>
+                    Whatever the Poodle's country of origin, both their German and French breed names indicate the modern Poodle's ancestors were widely
+                    used by waterfowlers both to retrieve shot game and to recover lost arrows and bolts that had missed their mark. The breed's
+                    distinctive lion coat clip developed as a practicality when they were used as waterfowler's dogs, with the long hair around the chest
+                    providing insulation for the dog's vitals in freezing water, while the shorn hindquarters reduced drag whilst swimming and the tufts
+                    of hair on the legs provided purchase in the water.
+                </p>
+                <li class="h3">Characteristics</li>
+                <table class="table table-hover">
+                    <tr>
+                        <th>№</th>
+                        <th>Character</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <td>Size</td>
+                        <td>Small-medium breed</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Coat</td>
+                        <td>Curly coat</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Head</td>
+                        <td>Small</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Jaws</td>
+                        <td>Small, but strong</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>Body</td>
+                        <td>Thinny build</td>
+                    </tr>
+                </table>
+            <h1 class="h1_padding">Test</h1>
+            <hr>
+            <ol>
+                <div style="margin-bottom: 70px;">
+                    <h3><li>Do people know the exact origin of the poodle?</li></h3>
+                    <hr>
+                    <button class="button-correct btn btn-outline-dark">No</button>
+                    <button class="button-incorrect btn btn-outline-dark">Yes</button>
+                    <p style="margin-bottom: 25px;" id="feedback_1"></p>
+                </div>
+
+                <div style="margin-bottom: 70px;">
+                    <h3><li>Poodle's body</li></h3>
+                    <hr>
+                    <button class="button-incorrect_2 btn btn-outline-dark">Strong</button>
+                    <button class="button-incorrect_2 btn btn-outline-dark">Small</button>
+                    <button class="button-correct_2 btn btn-outline-dark">Thinny</button>
+                    <button class="button-incorrect_2 btn btn-outline-dark">Big</button>
+                    <p id="feedback_2"></p>
+                </div>
+
+                <div style="margin-bottom: 70px;">
+                    <h3><li>Some cynologists believe the Poodle originated in ..., where it is known as the
+                        "Caniche", and that the breed descends from the Barbet.</li></h3>
+                    <hr>
+                    <input type="text">
+                    <button class="btn btn-secondary btn-sm" style="margin-bottom: 5px;">Check Answer</button>
+                    <p id="feedback_3"></p>
+                </div>
+            </ol>
+        </div>
+        <footer class="foot">
+            <h6>2022</h6>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            function setScroll_1() {
+                window.scrollTo({
+                    top: 680,
+                    left: 0,
+                    behavior: "smooth"
+                });
+            };
+
+            function setScroll_2() {
+                window.scrollTo({
+                    top: 1020,
+                    left: 0,
+                    behavior: "smooth"
+                });
+            };
+
+            const correct = document.querySelector('.button-correct');
+            correct.addEventListener('click', function() {
+                correct.style.backgroundColor = 'green';
+                document.querySelector('#feedback_1').innerHTML = 'Correct!';
+            });
+
+            const incorrect = document.querySelectorAll('.button-incorrect');
+            incorrect.forEach(element => {
+                element.addEventListener('click', function() {
+                element.style.backgroundColor = 'red';
+                document.querySelector('#feedback_1').innerHTML = 'Incorrect';
+            })});
+
+            const correct_2 = document.querySelector('.button-correct_2');
+            correct_2.addEventListener('click', function() {
+                correct_2.style.backgroundColor = 'green';
+                document.querySelector('#feedback_2').innerHTML = 'Correct!';
+            });
+
+            const incorrect_2 = document.querySelectorAll('.button-incorrect_2');
+            incorrect_2.forEach(element => {
+                element.addEventListener('click', function() {
+                element.style.backgroundColor = 'red';
+                document.querySelector('#feedback_2').innerHTML = 'Incorrect';
+            })});
+
+            const input = document.querySelector('input');
+            const button = document.querySelector('.btn-sm');
+            button.addEventListener('click', function() {
+                if(input.value == 'France'){
+                    input.style.backgroundColor = 'green';
+                    document.querySelector('#feedback_3').innerHTML = 'Correct!';
+                } else {
+                    input.style.backgroundColor = 'red';
+                    document.querySelector('#feedback_3').innerHTML = 'Incorrect';
+                }
+            });
+        </script>
+    </body>
+</html>
